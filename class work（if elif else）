@@ -5,12 +5,12 @@ def true_number(prompt="请输入您的数字: "):
         # 尝试将输入转换为浮点数
         try:
             true_number = float(user_input)
+            return true_number
         except ValueError:
             # 输入无法转换为数字
             print(f"error：'{user_input}'isn't a number ")
-        return true_number
 
-mark=true_number("please put your number")
+
 # a def to get letter grade
 def letter_grade(mark):
     if mark<0 or mark >100:
@@ -27,6 +27,9 @@ def letter_grade(mark):
         grade='F'
         return grade
 
-level=letter_grade(mark)
+#main code
+while True:
+    mark=true_number("please put your number")
+    level=letter_grade(mark)
 #output 
-print(f"{mark} point is level {level}")
+    print(f"{mark} point is level {level}")
