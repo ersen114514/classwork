@@ -7,4 +7,6 @@ def true_number(prompt="请输入您的数字: "):
             true_number = float(user_input)
         except ValueError:
             # 输入无法转换为数字
-            print(f"错误：'{user_input}' 不是有效的数字")
+            print(f"错误：'{user_input}' 不是有效的数字"
+    #返回有效数字
+    return true_number
