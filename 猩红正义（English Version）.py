@@ -1,4 +1,4 @@
-# Interactive Story Game - Full English Version
+# Interactive Story Game - Full English Version, translated by deepseek.
 
 def main():
     current_scene = "scene1"
