@@ -1,10 +1,15 @@
-text = input("please enter your text：")
-letter = input("Enter the letter you want to search for:  ")
-times = 0
-place = []
-for QAQ in range(len(text)):
-    if text[QAQ] == letter:
-        times += 1
-        place.append(QAQ) 
-print(f"Your letter appeared {times} times.")
-print(f"In the {place} positions respectively")
+text = input("Enter the text: ")
+letter = input("Enter the letter to search for: ")
+number = 0
+positions = []
+count = 0     
+for QAQ in text:
+    if QAQ == letter:
+        number += 1
+        positions.append(count)
+    count += 1 
+if number > 0:
+    print(f"The letter '{letter}' appears {number} time(s).")
+    print(f"Positions (index starting from 0): {positions}")
+else:
+    print(f"The letter '{letter}' was not found in the text.")
