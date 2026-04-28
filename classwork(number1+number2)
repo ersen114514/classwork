@@ -1,0 +1,9 @@
+x = int(input("number 1: "))
+y = int(input("number 2: "))
+z = x + y
+if z > 0:
+    print(f"{z} is positive")
+elif z < 0:
+    print (f"{z} is negative")
+else:
+    print ("the answer is zero")
