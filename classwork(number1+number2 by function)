@@ -1,0 +1,12 @@
+x = int(input("number 1: "))
+y = int(input("number 2: "))
+
+def w(x,y):
+    z = x + y
+    if z > 0:
+        return str(f"{z} is positive")
+    elif z < 0:
+        return str(f"{z} is negative")
+    else:
+        return str("the answer is zero")
+print(w(x,y))
