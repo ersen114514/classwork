@@ -1,0 +1,17 @@
+def years(x):
+    y = x 
+    if y >= 18 and y <= 100:
+        return str(f"You are an adult")
+    elif y >= 13 and y <= 17:
+        return str(f"You are an teenager")
+    elif y >= 0 and y <= 13:
+        return str(f"You are an child")
+    else:
+        return str("You are not human:(")
+while True:
+    z = input("your age: ")
+    try:
+        x = int(z)
+        print(years(x))
+    except:
+        print(f"{z} is not a age ")
