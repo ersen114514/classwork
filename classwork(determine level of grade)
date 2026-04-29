@@ -1,0 +1,21 @@
+def level(x):
+    y = x 
+    if y >= 80 and y <= 100:
+        return str(f"{x} is level A")
+    elif y >= 70 and y <= 79:
+        return str(f"{x} is level B")
+    elif y >= 60 and y <= 69:
+        return str(f"{x} is level C")
+    elif y >= 50 and y <= 59:
+        return str(f"{x} is level D")
+    elif y >= 0 and y <= 50:
+        return str(f"{x} is level F")
+    else:
+        return str(f"{x} is not a effective grade")
+while True:
+    z = input("your grade?(0-100): ")
+    try:
+        x = float(z)
+        print(level(x))
+    except:
+        print(f"{z} is not a grade ")
