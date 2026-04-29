@@ -1,0 +1,15 @@
+def jiou(x):
+    y = x % 2
+    if y == 0:
+        return str(f"{x} is even number")
+    elif y == 1:
+        return str(f"{x} is odd number")
+    else:
+        return str(f"{x} is not int number")
+while True:
+    z = input("your number: ")
+    try:
+        x = float(z)
+        print(jiou(x))
+    except:
+        print(f"{z} is not a number ")
