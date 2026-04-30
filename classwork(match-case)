@@ -1,0 +1,20 @@
+def week(x):
+    match x:
+        case 1:
+            return str("Monday")
+        case 2:
+            return str("Tuesday")
+        case 3:
+            return str("Wednesday")
+        case 4:
+            return str("Thuesday")
+        case 5:
+            return str("Friday")
+        case 6:
+            return str("Saturday")
+        case 7:
+            return str("Sunday")
+        case _:
+            return str("error")
+
+print(week(int(input("your number:"))))
