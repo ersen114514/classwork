@@ -1,0 +1,11 @@
+user_info = {}
+user_info["Name"] = input("Enter your name: ")
+user_info["Age"] = input("Enter your age: ")
+user_info["School"] = input("Enter your school: ")
+user_info["Residence"] = input("Enter your residence: ")
+user_info["Height"] = input("Enter your height: ")
+response = input("Do you want me to print your information? (y/n): ")
+if response.lower() == "y":
+    print(user_info)
+else:
+    print("goodbye")
