@@ -1,0 +1,12 @@
+y = 0
+while True:
+    try:
+        x=int(input("your number: "))
+        if x != 0:
+            y = y + x
+        else:
+            break
+    except:
+        print(f"please input number") 
+print(f"Total value is {y}")
+        
