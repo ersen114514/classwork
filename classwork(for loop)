@@ -1,0 +1,5 @@
+y = 0
+x = int(input("your number"))
+for i in range(x+1):
+    y += i
+print(y)
