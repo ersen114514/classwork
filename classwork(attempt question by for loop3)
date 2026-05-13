@@ -1,0 +1,4 @@
+total = 0
+for i in range(int(input("your number")) + 1):
+    total += i
+print(total)
