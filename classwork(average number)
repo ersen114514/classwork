@@ -1,0 +1,16 @@
+total = 0
+count = 0
+while True:
+    num = input("your number")
+    try:
+        num = float(num)
+        if num >= 0:
+            total += num
+            count += 1
+        else:
+            break
+    except:
+        print(f"{num} is not number")
+
+average = total/count
+print(f"average number is {average}")
