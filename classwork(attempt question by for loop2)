@@ -1,0 +1,4 @@
+total = 0
+for i in iter(lambda:int(input("your number")),0):
+    total += i
+print(total)
