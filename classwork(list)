@@ -1,0 +1,27 @@
+squares = [i**2 for i in range(1, 11)]
+print(squares)
+
+words = ["hello", "world", "python", "programming"]
+uppercase_words = [word.upper() for word in words]
+print(uppercase_words)
+
+mixed_strings = ["hi", "apple", "cat", "banana", "dog", "elephant"]
+filtered_uppercase = [s.upper() for s in mixed_strings if len(s) > 3]
+print(filtered_uppercase)
+
+movies = [
+    ("The Godfather", 1972),
+    ("Pulp Fiction", 1994),
+    ("12 Angry Men", 1957),
+    ("Forrest Gump", 1994),
+    ("The Good, the Bad and the Ugly", 1966),
+    ("Titanic", 1997),
+    ("Psycho", 1960),
+    ("The Matrix", 1999),
+    ("Casablanca", 1942),
+    ("The Dark Knight", 2008)
+]
+
+chosen_year = 1990 
+early_movies = [movie for movie in movies if movie[1] < chosen_year]
+print(early_movies)
