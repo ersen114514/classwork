@@ -1,0 +1,23 @@
+import math
+class calculate:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def rectangle(self,x,y):
+        return x*y
+    def triangle(self,x,y):
+        return x*y/2
+    def circle(self,x):
+        return x/2 * math.pi ** 2
+way = int(input("what you need calculate\n1=rectangle\n2=triangle\n3=circle\n"))
+x=int(input("your number"))
+y=int(input("your number"))
+if way == 1:
+    num = calculate(x,y)
+    print(num.rectangle(x,y))
+elif way == 2:
+    num = calculate(x,y)
+    print(num.triangle(x,y))
+elif way == 3:
+    num = calculate(x,y)
+    print(num.circle(x))
