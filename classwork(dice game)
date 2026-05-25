@@ -1,0 +1,35 @@
+import random
+while True:
+    lunci = int(input("how many turns you want play?\n"))
+    huihe = 0
+    players = int(input("how many players?\n"))
+    dice_number = int(input("how many dices?\n"))
+    dice_min = int(input("what is minimum number of dice?\n"))
+    dice_max = int(input("what is maximum number of dice?\n"))
+    while huihe < lunci:
+        huihe += 1
+        win = 0
+        player = 0
+        result = []
+        while player < players:
+            player += 1
+            roll = 0
+            dice = 0
+            while dice < dice_number:
+                dice += 1
+                rolls = random.randint(dice_min,dice_max)
+                print(rolls)
+                roll += rolls
+            result.append(roll)
+            print(f"player{player}'s total number is {roll}")
+        for i in result:
+            if win < i:
+                win = i
+        for o in range(len(result)):
+            if win == result[o]:
+                winner = o + 1
+        print(f"turn{huihe}'s winner is player{winner}, number is {win}")
+    count = int(input("you want play again?\n1 = yes\n2 = no\n"))
+    if count != 1:
+        print("thank you for your playing!:)")
+        break
