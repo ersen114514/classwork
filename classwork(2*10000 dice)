@@ -1,0 +1,8 @@
+import random
+count = 0
+while count < 10000:
+    count += 1
+    x = random.randint(1,6)
+    y = random.randint(1,6)
+    z = x+y
+    print(f"result{count}:{z}")
