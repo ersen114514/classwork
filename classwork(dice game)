@@ -11,6 +11,7 @@ while True:
         win = 0
         player = 0
         result = []
+        countinue = input("press \"enter\" to start new turn")
         while player < players:
             player += 1
             roll = 0
@@ -22,13 +23,14 @@ while True:
                 roll += rolls
             result.append(roll)
             print(f"player{player}'s total number is {roll}")
+            countinue = input("press \"enter\" to countinue")
         for i in result:
             if win < i:
                 win = i
         for o in range(len(result)):
             if win == result[o]:
                 winner = o + 1
-        print(f"turn{huihe}'s winner is player{winner}, number is {win}")
+        print(f"turn{huihe}'s winner is player{winner}! number is {win}")
     count = int(input("you want play again?\n1 = yes\n2 = no\n"))
     if count != 1:
         print("thank you for your playing!:)")
